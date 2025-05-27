@@ -29,11 +29,57 @@ login_student_template = '''
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Login</title>
     <style>
-        body { font-family: Arial; background: #f1f1f1; padding: 50px; }
-        .login-box { background: -moz-linear-gradient(right , black,white); padding: 40px; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 0 10px blue; }
-        input, button { padding: 10px; width: 100%; margin: 10px 0; }
+       body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    padding: 50px;
+}
+.login-box {
+    background: linear-gradient(to right, black, white);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px blue;
+}
+input, button {
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+ @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .login-box {
+                padding: 20px;
+                width: 90%;
+                height: auto;
+            }
+            .input{
+                width: 0%;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -58,13 +104,59 @@ student_form_template = '''
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Attendance</title>
     <style>
-        body { font-family: Arial;
-        padding: 50px; }
-        .form-box { background: -moz-linear-gradient(right , black,white,red); padding: 40px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 0 10px #ccc; }
-        input, select, button 
-        { padding: 10px; width: 100%; margin: 10px 0; }
+       body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    background: #f9f9f9;
+}
+.form-box {
+    background: linear-gradient(to right, black, white, red);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px #ccc;
+}
+input, select, button {
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background: linear-gradient(to right, white, yellow);
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.9;
+}
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+ @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .login-box {
+                padding: 20px;
+                width: 90%;
+                height: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -105,11 +197,52 @@ login_admin_template = '''
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Admin Login</title>
     <style>
-        body { font-family: Arial; background: #f1f1f1; padding: 50px; }
-        .login-box { background: -moz-linear-gradient(right , black,white,red); padding: 40px; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 0 10px #ccc; }
-        input, button { padding: 10px; width: 100%; margin: 10px 0; background: -moz-linear-gradient(right , black,white,red); }
+       body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    padding: 50px;
+    height: 100vh;
+}
+.login-box {
+    background: linear-gradient(to right, black, white, red);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px #ccc;
+}
+input, button {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+ @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                height: 120vh;
+            }
+            .login-box {
+                padding: 20px;
+                width: 90%;
+                height: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -133,6 +266,8 @@ admin_dashboard_template = '''
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Admin Dashboard</title>
     <style>
         body { font-family: Arial; background: #f0f8ff; padding: 20px; }
@@ -176,17 +311,55 @@ admin_dashboard_template = '''
 home_template = '''
 <!DOCTYPE html>
 <html>
+
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Admin Login</title>
     <style>
-        body { font-family: Arial; background: #f1f1f1; padding: 50px; }
-        .login-box {  background: -moz-linear-gradient(right , black,white,red); padding: 60px; border-radius: 10px; margin: auto;  }
-        input, button { padding: 10px; width: 100%; margin: 10px 0; }
+    body { 
+    background-image: url('cre.jpg');
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+.login-box {
+    background: linear-gradient(to right, black, white, red);
+    padding: 60px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+}
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+a.btn:hover {
+    background-color: #3e8e41;
+}
+ @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .login-box {
+                padding: 20px;
+                width: 90%;
+                height: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
 <div class="login-box">
-    <h2 style="text-align: center;">WELCOME TO <br> CLASS ATTENDANCE ONLINE 📗📗</h2>
+    <h2 style="text-align: center;">WELCOME TO <br> GHANA COMMUNICATION TECHNOLOGY<br> UNIVERSITY CLASS ATTENDANCE ONLINE 📗📗</h2>
     
     <p style="text-align: center;" >PLEASE CLICK ONE</p>
     <div style="text-align:center;">
@@ -210,7 +383,7 @@ home_template = '''
 def home():
     return render_template_string(home_template)
 
-@app.route('/student_login', methods=['GET', 'POST'])
+@app.route('/student_login', methods= ['GET', 'POST'])
 def student_login():
     if request.method == 'POST':
         index = request.form['index']
@@ -282,4 +455,4 @@ def export():
 
 # RUN APP
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0" )
